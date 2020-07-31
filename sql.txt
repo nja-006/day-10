@@ -47,6 +47,7 @@ FROM users
 SELECT * 
 FROM items
 WHERE name LIKE '%uniklo%' 
+AND price > 1000000
 
 SELECT mi.name,mi.description,mi.price,mi.stock,mi.category_ID,ct.name
 FROM items mi JOIN categories ct
